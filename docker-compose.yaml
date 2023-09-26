@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:12.1-alpine
+    environment:
+      POSTGRES_DB: testuserdb
+      POSTGRES_USER: testuser01
+      POSTGRES_PASSWORD: testpassword01
+    restart:
+      always
